@@ -1,0 +1,256 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+  
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* Hero Section Styles */
+#hero {
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* About Section Styles */
+#about {
+  padding: 100px 0;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Services Section Styles */
+#services {
+  padding: 100px 0;
+}
+
+#services h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.service {
+  margin-bottom: 30px;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.service p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Projects Section Styles */
+#projects {
+  padding: 100px 0;
+}
+
+#projects h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.project p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Contact Section Styles */
+#contact {
+  background-color: #f4f4f4;
+  padding: 100px 0;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form textarea {
+  height: 120px;
+}
+
+form .btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+form .btn:hover {
+  background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+      position: static;
+      background-color: transparent;
+      padding: 20px;
+      /* Autres styles de la barre de navigation sur mobile */
+    }
+  }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .menu li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #hero h2 {
+    font-size: 28px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+
+  #about h2 {
+    font-size: 28px;
+  }
+
+  #about p {
+    font-size: 16px;
+  }
+
+  #services h2 {
+    font-size: 28px;
+  }
+
+  .service h3 {
+    font-size: 20px;
+  }
+
+  .service p {
+    font-size: 14px;
+  }
+
+  #projects h2 {
+    font-size: 28px;
+   .project h3 {
+    font-size: 20px;
+  }
+
+  .project p {
+    font-size: 14px;
+  }
+
+  #contact h2 {
+    font-size: 28px;
+  }
+}}
