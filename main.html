@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Template de site vitrine pour développeur web freelance">
+  <title>FIRGUN CORP</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <h1>FIRGUN CORP</h1>
+        </div>
+        <ul class="menu">
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#carrousel">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <div class="animated-text">
+        <span></span>
+      </div>
+      <a href="#contact" class="btn">Contactez-nous</a>
+      <a href="https://ln5.sync.com/dl/f57f19030/ncxv68t5-tqtrad84-qqmk36sq-e9artutz" class="btn" download="Cahier des charges" target=”_blank”>Télécharger notre cahier des charges</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>À propos</h2>
+      <p>Josselin, développeur frontend en Freelance passionné, également connu sous le pseudonyme Firgun. À 23 ans, j'ai consacré la dernière année à perfectionner mes compétences dans le domaine du développement web.</p>
+      <p>Au cours de mon parcours, j'ai acquis une expertise approfondie dans divers langages de programmation et technologies web. Mon approche axée sur la résolution de problèmes et ma créativité ont été des atouts clés pour créer des solutions web intuitives et modernes.</p>
+      <p>Je suis constamment à la recherche de nouveaux défis pour affiner mes compétences et rester à la pointe des dernières tendances technologiques. Ma passion pour le développement web va au-delà du simple codage ; elle englobe la création d'expériences utilisateur exceptionnelles et l'exploration de nouvelles idées innovantes.</p>
+      <p>En dehors du monde du code, j'aime collaborer sur des projets stimulants et partager mes connaissances avec la communauté. Mon objectif est de contribuer de manière significative à l'évolution constante du paysage numérique.</p>
+      <p>Si vous avez un projet passionnant ou une idée novatrice, n'hésitez pas à me contacter. Je suis toujours ouvert aux nouvelles opportunités de collaboration et prêt à relever de nouveaux défis dans le domaine du développement web.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="service">
+        <ul>
+          <li>
+            <strong>Conception et Développement de Sites Web</strong>
+            <ul>
+              <li>Création de sites web modernes et esthétiques.</li>
+              <li>Développement de sites responsifs pour une expérience utilisateur optimale sur tous les appareils.</li>
+            </ul>
+          </li>
+      </div>
+      <div class="service">
+        <li>
+          <strong>Développement Front-End</strong>
+          <ul>
+            <li>Implémentation de designs attrayants en utilisant HTML, CSS et JavaScript.</li>
+            <li>Intégration de bibliothèques et de frameworks front-end tels que React, Vue.js, ou Angular.</li>
+          </ul>
+      </div>
+      <div class="service">
+        <li>
+          <strong>Sécurité Web</strong>
+          <ul>
+            <li>Mise en place de mesures de sécurité pour protéger les sites contre les menaces en ligne.</li>
+            <li>Intégration de protocoles de sécurité tels que HTTPS et sécurisation des données.</li>
+          </ul>
+      </div>
+      <div class="service">
+        <li>
+          <strong>Maintenance et Support Technique</strong>
+          <ul>
+            <li>Surveillance continue des sites web pour assurer un fonctionnement sans problème.</li>
+            <li>Fourniture de support technique et résolution rapide des problèmes.</li>
+          </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="carrousel">
+    <div class="container">
+        <div class="slide"></div>
+        <h2>Nos Projets</h2>
+        <div class="slick-carousel">
+            <div class="photo"><img src="assets/img/ss1.png" alt="Photo 1"></div>
+            <div class="photo"><img src="assets/img/ss2.png" alt="Photo 2"></div>
+            <div class="photo"><img src="assets/img/ss3.png" alt="Photo 3"></div>
+            <!-- Ajoutez d'autres photos ici -->
+        </div>
+        <div class="navigation">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+</section>
+<script>
+    // Initialisez le carrousel à l'intérieur d'un bloc de code JavaScript
+    $(document).ready(function(){
+    $('.slick-carousel').slick({
+        dots: false,
+        arrows: false, // Supprime les flèches du carrousel
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false
+            }
+        }
+        ]
+    });
+
+    // Lorsqu'un dot est cliqué, change la photo en correspondance à sa position
+    $('.slick-carousel').on('click', '.slick-dots li', function() {
+        var dotIndex = $(this).index();
+        $('.slick-carousel').slick('slickGoTo', dotIndex);
+    });
+    });
+</script>
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(carousel, 5000); // Change l'image toutes les 5 secondes
+}
+</script>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <form
+        action="https://formspree.io/f/mvojjwdy"
+        method="POST"
+        enctype="multipart/form-data"
+>
+        <input type="text" placeholder="Nom" required>
+        <input type="email" name="name" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit" class="btn-submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Firgun Corp. Tous droits réservés.</p>
+    </div>
+  </footer>
+  </script>
+</body>
+</html>
